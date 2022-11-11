@@ -31,6 +31,7 @@ body {
   padding: 8px 15px;
   border-radius: 3px 0 0 3px;
   width: 100%;
+  color: #223852;
 }
 
 .user-input:focus {
