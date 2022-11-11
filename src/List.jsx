@@ -8,7 +8,7 @@ const GroceryListItems = ({
   showAlert,
 }) => {
   const handleDelete = ({ id }) => {
-    showAlert(true, "success", `Item removed from the Basket.`);
+    showAlert(true, "danger", `Item removed from the Basket.`);
     setGroceryList(groceryList.filter((groceryItem) => groceryItem.id !== id));
   };
 

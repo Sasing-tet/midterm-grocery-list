@@ -60,7 +60,7 @@ const Form = ({
       <input
         className="user-input"
         type="text"
-        placeholder="i.e. eggs"
+        placeholder="Input grocery Item, i.e. eggs"
         value={input}
         onChange={onInputChange}
       ></input>
