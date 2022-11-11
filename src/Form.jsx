@@ -17,9 +17,11 @@ const Form = ({
   };
 
   const updateGroceryItem = (title, id) => {
+    //initalize new grocery item and store the mapped item that fits the condition
     const newGroceryItem = groceryList.map((groceryItem) =>
       groceryItem.id === id ? { title, id } : groceryItem
     );
+    //updates the item by setting set grocery list to new grocery item
     setGroceryList(newGroceryItem);
     setEditGroceryList("");
   };
@@ -34,13 +36,13 @@ const Form = ({
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    if (input.trim().length === 0) {
-      showAlert(true, "danger", "Invalid. Input Field is empty.");
-    } else if (!editGroceryList) {
+    if (input.trim().length === 0) { //if user input is empty when pressing submit or pressing enter
+      showAlert(true, "danger", "Invalid. Input Field is empty."); 
+    } else if (!editGroceryList) { //if user input does not click edit button
       showAlert(true, "success", `'${input}' added to the Basket`);
       setGroceryList([...groceryList, { id: uuidv4(), title: input }]);
       setInput("");
-    } else {
+    } else { //default set to when edit button is pressed
       showAlert(true, "success", `Item changed to '${input}'`);
       updateGroceryItem(input, editGroceryList.id);
     }

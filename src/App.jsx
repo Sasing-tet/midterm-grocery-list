@@ -4,7 +4,7 @@ import List from "./List";
 import "./App.css";
 
 const App = () => {
-  const initialState = JSON.parse(localStorage.getItem("list")) || [];
+  const initialState = JSON.parse(localStorage.getItem("list")) || []; //store state in local storage
   const [input, setInput] = useState("");
   const [groceryList, setGroceryList] = useState(initialState);
   const [editGroceryList, setEditGroceryList] = useState(null);
@@ -20,7 +20,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem("list", JSON.stringify(groceryList));
+    //convert list items to string and store to local storage
+    localStorage.setItem("list", JSON.stringify(groceryList)); 
   }, [groceryList]);
 
   return (

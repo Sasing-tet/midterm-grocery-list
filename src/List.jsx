@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa"; //font awesome react icons
 
 const GroceryListItems = ({
   groceryList,
@@ -9,13 +9,13 @@ const GroceryListItems = ({
 }) => {
   const handleDelete = ({ id }) => {
     showAlert(true, "danger", `Item removed from the Basket.`);
-    setGroceryList(groceryList.filter((groceryItem) => groceryItem.id !== id));
+    setGroceryList(groceryList.filter((groceryItem) => groceryItem.id !== id)); //filter out and remove items 
   };
 
   const handleEdit = ({ id }) => {
     const findGroceryItem = groceryList.find(
       (groceryItem) => groceryItem.id === id
-    );
+    ); //returns the first value of array that fits the condition
     setEditGroceryList(findGroceryItem);
   };
 
