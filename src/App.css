@@ -1,0 +1,137 @@
+body {
+  background-color: #ececec;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  color: #223852;
+}
+
+.list-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 40px 50px 40px;
+  box-shadow: 1px 1px 5px 4px rgba(112, 112, 112, 0.216);
+  min-width: 400px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.user-input {
+  border: none;
+  background-color:rgba(131, 131, 131, 0.216);
+  padding: 8px 15px;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+}
+
+.user-input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #223852;
+}
+
+.submit-button {
+  background-color: #366fb4;
+  border-radius: 0 3px 3px 0;
+  padding: 5px 10px 7px 10px;
+  margin-left: 2px;
+  color: #ececec;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: #223852;
+  transition: 0.5s;
+}
+
+.submit-button:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #223852;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 10px 0 5px 0;
+  font-weight: 600;
+}
+
+li:hover {
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.edit-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  color: rgb(20, 202, 20);
+}
+
+.edit-button:hover {
+  border: none;
+  background-color: #ffffff;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  color: rgb(211, 21, 21);
+}
+
+.delete-button:hover {
+  border: none;
+  background-color: #ffffff;
+}
+
+.clear-button {
+  background-color: #223852;
+  border: none;
+  font-weight: 600;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  color: #ececec;
+}
+
+.clear-button:hover{
+  background-color: #aad0ff;
+  border: none;
+  color: #223852;
+  transition: 0.3s;
+}
+
+.alert-danger {
+  border-radius: 5px;
+  color: rgb(226, 83, 83);
+  background-color: rgb(255, 220, 220);
+  border: 1px solid rgb(255, 45, 45);
+  display: flex;
+  justify-content: center;
+}
+
+.alert-success {
+  border-radius: 5px;
+  color: rgb(66, 170, 66);
+  background-color: rgb(213, 255, 213);
+  border: 1px solid rgb(16, 177, 16);
+  display: flex;
+  justify-content: center;
+}
